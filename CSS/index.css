@@ -1,0 +1,154 @@
+#main-container{
+    height: 100vh;
+    width: 100%;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    height:200px;
+    width: 200px;
+     border: 2px solid red;
+}
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #2563eb, #3b82f6);
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #2563eb;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* STATS */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.stat-card {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+    font-size: 28px;
+    color: #2563eb;
+}
+
+/* FEATURES */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature {
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* SLIDER CONTAINER */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+/* SLIDES TRACK */
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slideMove 16s infinite;
+}
+
+/* EACH CARD */
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    padding: 60px;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    margin: 0 20px;
+}
+
+/* COLORS */
+.card1 {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.card2 {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+
+.card3 {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+.card4 {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+}
+
+/* TEXT */
+.slide h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.slide p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.slide button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.slide button:hover {
+    background: black;
+    color: white;
+}
+
+/* ANIMATION */
+@keyframes slideMove {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}

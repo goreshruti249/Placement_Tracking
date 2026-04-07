@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/edit.css"/>
+</head>
+<body>
+    <div class="form-container">
+    <h2>Edit Student</h2>
+
+    <form id="editForm">
+
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="input-group">
+            <label>College ID</label>
+            <input type="text" id="collegeId" required>
+        </div>
+
+        <div class="input-group">
+            <label>Status</label>
+            <select id="status">
+                <option value="Placed">Placed</option>
+                <option value="Not Placed">Not Placed</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Profile Image URL</label>
+            <input type="text" id="image">
+        </div>
+
+        <button type="submit" class="submit-btn">Update Student</button>
+
+    </form>
+</div>
+</body>
+</html>

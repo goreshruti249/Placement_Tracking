@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/student.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header id="header">
+       <h1>Placement Tracker</h1>
+       <input type="search" >
+       <nav id="navlinks">
+        <a href="index.html">Home</a>
+        <a href="college.html">Colleges</a>
+        <a href="student.html">Students</a>
+        <a href="services.html">Companies</a>
+        <a href="services.html">Job roles</a>
+       </nav>
+    </header>
+    <!-- <button><a href="">Add New Student</a></button> -->
+
+    <!-- or -->
+    <div class="top-controls">
+    <button id="newStudent" class="primary-btn">+ Add Student</button>
+    <button id="placedStudent" class="filter-btn">Placed</button>
+    <button id="notPlacedStudent" class="filter-btn">Not Placed</button>
+</div>
+    
+    <section id="student-container"></section>
+    <script src="../JS/api.js"></script>
+     <script src="../JS/student.js"></script>
+</body>
+
+</html>

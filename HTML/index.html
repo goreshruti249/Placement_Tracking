@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+       <h1>Placement Tracker</h1>
+       <input type="search" >
+       <nav id="navlinks">
+        <a href="index.html">Home</a>
+        <a href="college.html">Colleges</a>
+        <a href="student.html">Students</a>
+        <a href="services.html">Companies</a>
+        <a href="services.html">Job roles</a>
+       </nav>
+    </header>
+
+    <main id="main-container">
+
+    <section class="slider">
+
+        <div class="slides">
+
+            <div class="slide card1">
+                <h2>🎓 Students</h2>
+                <p>Manage student profiles, track placement status, and monitor progress easily.</p>
+                <button onclick="location.href='student.html'">View Students</button>
+            </div>
+
+            <div class="slide card2">
+                <h2>🏫 Colleges</h2>
+                <p>Organize college data, view affiliations, and manage academic records.</p>
+                <button onclick="location.href='college.html'">View Colleges</button>
+            </div>
+
+            <div class="slide card3">
+                <h2>🏢 Companies</h2>
+                <p>Track companies visiting for recruitment and their hiring details.</p>
+                <button onclick="location.href='services.html'">View Companies</button>
+            </div>
+
+            <div class="slide card4">
+                <h2>💼 Job Roles</h2>
+                <p>Explore job roles offered and match students with opportunities.</p>
+                <button onclick="location.href='services.html'">View Jobs</button>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+    <script src="../JS/api.js"></script>
+    <script src="../JS/index.js"></script>
+</body>
+</html>

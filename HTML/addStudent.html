@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student Page</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+    
+
+</head>
+
+<body>
+    <header id="header">
+        <h1>Placement Tracker</h1>
+        <input type="search">
+        <nav id="navlinks">
+        <a href="index.html">Home</a>
+        <a href="college.html">Colleges</a>
+        <a href="student.html">Students</a>
+        <a href="services.html">Companies</a>
+        <a href="services.html">Job roles</a>
+        </nav>
+    </header>
+
+    <form id="studentForm">
+        <h2>Add New Student</h2>
+        <label for="Fullname">Student Name : </label>
+        <input type="text" placeholder="Enter your name : " id="Fullname">
+        <br><br>
+
+        <label for="gender">Gender : </label>
+        <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        &nbsp; &nbsp; &nbsp;
+
+        <label for="dob">Date of Birth : </label>
+        <input type="date" id="dob">
+        <br><br>
+
+        <label for="profileimg">Upload your image : </label>
+        <input type="file" id="profileimg">
+        <br><br>
+
+        <label for="collegeId">College Id : </label>
+        <input type="text" id="collegeId" placeholder="Enter college id">
+        <br><br>
+
+        <label for="department">Stream : </label>
+        <input type="text" id="department" placeholder="Enter department">
+        <br><br>
+
+        <label for="degree">Degree : </label>
+        <input type="text" id="degree" placeholder="Enter degree">
+        <br><br>
+
+        <label for="passout">Passout Year : </label>
+        <input type="number" id="passout" placeholder="Enter graduation year">
+        <br><br>
+
+        <label for="cgpa">CGPA : </label>
+        <input type="number" id="cgpa" placeholder="Enter cpga">
+        <br><br>
+
+        <label for="backlog">Enter your backlog : </label>
+        <input type="number" id="backlog" placeholder="Enter backlog">
+        <br>
+        <br>
+
+        <label for="programming">Enter your programming skills : </label>
+        <input type="text" id="programming" placeholder="Enter programming skills">
+        <br>
+        <br>
+        <label for="database">Enter your database skills : </label>
+        <input type="text" id="database" placeholder="Enter database skills">
+        <br><br>
+
+        <label for="tools">Enter your tools skills : </label>
+        <input type="text" id="tools" placeholder="Enter tools skills">
+        <br><br>
+
+        <label for="placement_status">placement status : </label>
+        <select id="placement_status">
+            <option>Placed</option>
+            <option>Not Placed</option>
+        </select>
+        <br><br>
+
+        <button>Submit</button>
+    </form>
+    <script src="../JS/addStudent.js"></script>
+</body>
+
+</html>
