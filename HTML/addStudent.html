@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Student Page</title>
     <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/addStudent.css">
     
 
 </head>
@@ -23,73 +24,117 @@
         </nav>
     </header>
 
-    <form id="studentForm">
-        <h2>Add New Student</h2>
-        <label for="Fullname">Student Name : </label>
-        <input type="text" placeholder="Enter your name : " id="Fullname">
-        <br><br>
+    <div class="form-container">
+    <form id="student-form">
 
-        <label for="gender">Gender : </label>
-        <select id="gender">
-            <option>Male</option>
-            <option>Female</option>
-        </select>
-        &nbsp; &nbsp; &nbsp;
+    <h2>Add New Student</h2>
 
-        <label for="dob">Date of Birth : </label>
-        <input type="date" id="dob">
-        <br><br>
+    <!-- PERSONAL INFO -->
+    <div class="section-title">Personal Information</div>
 
-        <label for="profileimg">Upload your image : </label>
-        <input type="file" id="profileimg">
-        <br><br>
+    <div class="form-grid">
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name">
+        </div>
 
-        <label for="collegeId">College Id : </label>
-        <input type="text" id="collegeId" placeholder="Enter college id">
-        <br><br>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter email">
+        </div>
 
-        <label for="department">Stream : </label>
-        <input type="text" id="department" placeholder="Enter department">
-        <br><br>
+        <div class="form-group">
+            <label>Phone</label>
+            <input type="text" placeholder="Enter phone number">
+        </div>
 
-        <label for="degree">Degree : </label>
-        <input type="text" id="degree" placeholder="Enter degree">
-        <br><br>
+        <div class="form-group">
+            <label>Gender</label>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
 
-        <label for="passout">Passout Year : </label>
-        <input type="number" id="passout" placeholder="Enter graduation year">
-        <br><br>
+        <div class="form-group">
+            <label>Profile Image URL</label>
+            <input type="text" placeholder="Paste image link">
+        </div>
+    </div>
 
-        <label for="cgpa">CGPA : </label>
-        <input type="number" id="cgpa" placeholder="Enter cpga">
-        <br><br>
+    <!-- ACADEMIC INFO -->
+    <div class="section-title">Academic Information</div>
 
-        <label for="backlog">Enter your backlog : </label>
-        <input type="number" id="backlog" placeholder="Enter backlog">
-        <br>
-        <br>
+    <div class="form-grid">
+        <div class="form-group">
+            <label>College ID</label>
+            <input type="text" placeholder="Enter college ID">
+        </div>
 
-        <label for="programming">Enter your programming skills : </label>
-        <input type="text" id="programming" placeholder="Enter programming skills">
-        <br>
-        <br>
-        <label for="database">Enter your database skills : </label>
-        <input type="text" id="database" placeholder="Enter database skills">
-        <br><br>
+        <div class="form-group">
+            <label>Branch</label>
+            <input type="text" placeholder="Enter branch">
+        </div>
 
-        <label for="tools">Enter your tools skills : </label>
-        <input type="text" id="tools" placeholder="Enter tools skills">
-        <br><br>
+        <div class="form-group">
+            <label>Year of Passing</label>
+            <input type="number" placeholder="Enter year">
+        </div>
 
-        <label for="placement_status">placement status : </label>
-        <select id="placement_status">
-            <option>Placed</option>
-            <option>Not Placed</option>
-        </select>
-        <br><br>
+        <div class="form-group">
+            <label>CGPA</label>
+            <input type="text" placeholder="Enter CGPA">
+        </div>
+    </div>
 
-        <button>Submit</button>
-    </form>
+    <!-- PLACEMENT INFO -->
+    <div class="section-title">Placement Information</div>
+
+    <div class="form-grid">
+        <div class="form-group">
+            <label>Placement Status</label>
+            <select>
+                <option>Placed</option>
+                <option>Not Placed</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Company Name</label>
+            <input type="text" placeholder="Enter company name">
+        </div>
+
+        <div class="form-group">
+            <label>Job Role</label>
+            <input type="text" placeholder="Enter job role">
+        </div>
+
+        <div class="form-group">
+            <label>Salary Package (LPA)</label>
+            <input type="text" placeholder="Enter salary">
+        </div>
+    </div>
+
+    <!-- ADDRESS -->
+    <div class="section-title">Address</div>
+
+    <div class="form-grid">
+        <div class="form-group">
+            <label>City</label>
+            <input type="text" placeholder="Enter city">
+        </div>
+
+        <div class="form-group">
+            <label>State</label>
+            <input type="text" placeholder="Enter state">
+        </div>
+    </div>
+
+    <!-- BUTTON -->
+    <button type="submit" class="submit-btn">Add Student</button>
+
+</form>
+</div>
     <script src="../JS/addStudent.js"></script>
 </body>
 
