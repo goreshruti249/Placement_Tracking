@@ -93,4 +93,43 @@ body {
     font-size: 12px;
 }
 
+/* PAGE */
+body{
+    background:#f8fafc;
+    font-family:'Poppins',sans-serif;
+}
 
+/* CONTAINER */
+#job-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,370px));
+    justify-content:center;
+    gap:28px;
+    padding:35px;
+}
+
+/* CARD */
+.job-card{
+    background:#ffffff;
+    border-radius:16px;
+    padding:22px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.06);
+    border-left:5px solid #100d0e;
+    transition:0.3s;
+}
+
+.job-card:hover{
+    transform: translateY(-7px);
+    box-shadow:0 14px 28px rgba(0,0,0,0.10);
+}
+
+.job-card h3{
+    margin:0;
+    font-size:22px;
+    color:#0f172a;
+}
+
+.job-card p{
+    margin:8px 0;
+    color:#64748b;
+}

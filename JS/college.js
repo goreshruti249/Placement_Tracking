@@ -41,10 +41,7 @@ let displayCollege = (college) => {
             <p><strong>Established:</strong> ${ele.established_year}</p>
             <p><strong>Location:</strong> ${ele.location?.city || "N/A"}, ${ele.location?.state || "N/A"}</p>
 
-            <div class="college-btns">
-                <button class="view-btn">View</button>
-                <button class="delete-btn">Delete</button>
-            </div>
+            
         </div>
 
     </div>
