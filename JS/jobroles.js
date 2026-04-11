@@ -84,7 +84,7 @@ jobroleContainer.innerHTML = data.map((ele) => `
             ${ele.skills.map(skill => `<span>${skill}</span>`).join("")}
         </div>
 
-        <button class="apply-btn">Apply Now</button>
+        
     </div>
 
 </div>

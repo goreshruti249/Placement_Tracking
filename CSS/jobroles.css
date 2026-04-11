@@ -93,19 +93,4 @@ body {
     font-size: 12px;
 }
 
-/* Button */
-.apply-btn {
-    width: 100%;
-    margin-top: 14px;
-    padding: 10px;
-    background: #2563eb;
-    border: none;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-}
 
-.apply-btn:hover {
-    background: #1d4ed8;
-}
