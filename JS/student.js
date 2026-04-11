@@ -1,5 +1,5 @@
 let studentsContainer = document.getElementById("student-container");
-let allStudents;
+let allStudents=[];
 
 let callStudentFromApi = async () => {
 
@@ -94,3 +94,30 @@ let newStudent = document.getElementById("newStudent");
 newStudent.addEventListener("click",()=>{
     window.location.href = "../HTML/addStudent.html";
 })
+let searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function () {
+
+    let searchValue = this.value.toLowerCase().trim();
+
+    let filteredStudents = allStudents.filter((ele) => {
+
+        return (
+            ele.personal_info.full_name.toLowerCase().includes(searchValue) ||
+            ele.academic_info.college_id.toLowerCase().includes(searchValue) ||
+            ele.placement_status.toLowerCase().includes(searchValue)
+        );
+
+    });
+
+    if (filteredStudents.length > 0) {
+        displayStudent(filteredStudents);
+    } else {
+        studentsContainer.innerHTML = `
+            <h2 style="text-align:center; color:red; width:100%; margin-top:40px;">
+                No Student Found
+            </h2>
+        `;
+    }
+
+});

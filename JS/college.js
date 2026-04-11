@@ -1,5 +1,5 @@
 let collegesContainer = document.getElementById("college-container");
-let allColleges;
+let allColleges=[];
 
 let callCollegeFromApi= async()=>{
     allColleges = await getColleges();
@@ -51,3 +51,32 @@ let displayCollege = (college) => {
 
     `).join("");
 };
+let searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function () {
+
+    let value = this.value.toLowerCase().trim();
+
+    let filteredColleges = allColleges.filter((ele) => {
+
+        return (
+            ele.name.toLowerCase().includes(value) ||
+            ele.affiliated_to.toLowerCase().includes(value) ||
+            ele.location.city.toLowerCase().includes(value) ||
+            ele.location.state.toLowerCase().includes(value)
+        );
+
+    });
+
+    if (filteredColleges.length > 0) {
+        displayCollege(filteredColleges);
+    } else {
+        collegesContainer.innerHTML = `
+        <div class="no-college-box">
+            <h2>🏫 No College Found</h2>
+            <p>Try another search keyword</p>
+        </div>
+        `;
+    }
+
+});
