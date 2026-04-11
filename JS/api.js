@@ -23,3 +23,10 @@ let getJob= async()=>{
         return res.json();
     })
 };
+function logout(){
+
+    localStorage.removeItem("isAdminLoggedIn");
+    localStorage.removeItem("adminName");
+
+    window.location.href = "adminLogin.html";
+}

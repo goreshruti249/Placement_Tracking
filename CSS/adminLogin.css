@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    font-family:Poppins,sans-serif;
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-box{
+    background:white;
+    width:380px;
+    padding:30px;
+    border-radius:14px;
+}
+
+input,button{
+    width:100%;
+    padding:12px;
+    margin-top:12px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+}
+#errorMsg{
+    color:red;
+}

@@ -59,3 +59,11 @@
 #navlinks a:hover::after {
     width: 100%;
 }
+.logout-btn{
+    padding:8px 14px;
+    background:#ef4444;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
