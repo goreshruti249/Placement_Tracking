@@ -1,22 +1,40 @@
-let index= async()=>{
-    let students= await getStudents();
-    let colleges= await getColleges();
-    let companies= await getCompanies();
-    let jobs= await getJob();
-    console.log(students.length);
+/* Dashboard Counts */
 
-    let studentsBox= document.getElementById("students")
-    studentsBox.innerHTML=<h1>Total Students ${students.length}</h1>;
-
-    let collegesBox= document.getElementById("colleges")
-    collegesBox.innerHTML=<h1>Total Colleges ${colleges.length}</h1>;
-
-    let companiesBox= document.getElementById("companies")
-    companiesBox.innerHTML=<h1>Total Companies ${companies.length}</h1>;
-
-    let jobBox= document.getElementById("jobs")
-    jobBox.innerHTML=<h1>Total Colleges ${jobs.length}</h1>;
+document.getElementById("collegeCount").innerText = 12;
+document.getElementById("studentCount").innerText = 150;
+document.getElementById("placedCount").innerText = 96;
+document.getElementById("companyCount").innerText = 28;
 
 
-};
-index();
+/* Latest Updates */
+
+let updates = [
+{
+title: "Infosys hired 12 students",
+desc: "Campus drive completed successfully from MIT Pune."
+},
+
+{
+title: "TCS drive scheduled next week",
+desc: "Students can apply before Friday."
+},
+
+{
+title: "Accenture selected 8 candidates",
+desc: "Round 2 interviews completed."
+},
+
+{
+title: "Wipro added new job roles",
+desc: "Frontend Developer and QA Tester openings available."
+}
+];
+
+let updatesContainer = document.getElementById("updates-container");
+
+updatesContainer.innerHTML = updates.map((ele)=>`
+<div class="update-card">
+    <h4>${ele.title}</h4>
+    <p>${ele.desc}</p>
+</div>
+`).join("");

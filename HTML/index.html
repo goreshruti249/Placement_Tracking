@@ -1,64 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/header.css">
-    <link rel="stylesheet" href="../CSS/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Placement Tracker</title>
+
+<link rel="stylesheet" href="../CSS/header.css">
+<link rel="stylesheet" href="../CSS/index.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-       <h1>Placement Tracker</h1>
-       <input type="search" >
-       <nav id="navlinks">
+
+<header id="header">
+    <h1>Placement Tracker</h1>
+
+    <input type="search" placeholder="Search..." id="searchInput">
+
+    <nav id="navlinks">
         <a href="index.html">Home</a>
         <a href="college.html">Colleges</a>
         <a href="student.html">Students</a>
-       <a href="company.html">Companies</a>
-        <a href="jobroles.html">Job roles</a>
-       </nav>
-    </header>
+        <a href="company.html">Companies</a>
+        <a href="jobroles.html">Job Roles</a>
+    </nav>
+</header>
 
-    <main id="main-container">
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Track Student Placements with Ease</h2>
+        <p>Manage colleges, students, companies, job roles and placement records in one smart dashboard.</p>
 
-    <section class="slider">
-
-        <div class="slides">
-
-            <div class="slide card1">
-                <h2>🎓 Students</h2>
-                <p>Manage student profiles, track placement status, and monitor progress easily.</p>
-                <button onclick="location.href='student.html'">View Students</button>
-            </div>
-
-            <div class="slide card2">
-                <h2>🏫 Colleges</h2>
-                <p>Organize college data, view affiliations, and manage academic records.</p>
-                <button onclick="location.href='college.html'">View Colleges</button>
-            </div>
-
-            <div class="slide card3">
-                <h2>🏢 Companies</h2>
-                <p>Track companies visiting for recruitment and their hiring details.</p>
-                <button onclick="location.href='services.html'">View Companies</button>
-            </div>
-
-            <div class="slide card4">
-                <h2>💼 Job Roles</h2>
-                <p>Explore job roles offered and match students with opportunities.</p>
-                <button onclick="location.href='services.html'">View Jobs</button>
-            </div>
-
+        <div class="hero-btns">
+            <a href="student.html">View Students</a>
+            <a href="company.html">Explore Companies</a>
         </div>
+    </div>
+</section>
 
-    </section>
+<!-- Dashboard Cards -->
+<section class="dashboard">
 
-</main>
+    <div class="dash-card">
+        <h3 id="collegeCount">0</h3>
+        <p>Total Colleges</p>
+    </div>
 
+    <div class="dash-card">
+        <h3 id="studentCount">0</h3>
+        <p>Total Students</p>
+    </div>
 
-    <script src="../JS/api.js"></script>
-    <script src="../JS/index.js"></script>
+    <div class="dash-card">
+        <h3 id="placedCount">0</h3>
+        <p>Placed Students</p>
+    </div>
+
+    <div class="dash-card">
+        <h3 id="companyCount">0</h3>
+        <p>Hiring Companies</p>
+    </div>
+
+</section>
+
+<!-- Recent Activity -->
+<section class="activity">
+    <h2>Latest Placement Updates</h2>
+
+    <div id="updates-container"></div>
+</section>
+
+<script src="../JS/index.js"></script>
+
 </body>
 </html>
